@@ -1,0 +1,1 @@
+This is a simple project "Hello World" from Group 8.
