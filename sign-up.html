@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="windows-1252">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pet Adoption - Sign Up</title>
+   <style>
+    body {
+        background-image: url('/static/images/background.jpg');
+        background-size: cover; /* Cover the entire viewport */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center; /* Center the background image */
+        color: black;
+        text-align: center;
+        font-size: 24px;
+        padding: 100px;
+        margin: 0; /* Remove default margin */
+    }
+
+    /* Container for content and images */
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: relative; /* Enable relative positioning */
+    }
+
+    /* Styles for the footer */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Images to be aligned alongside the paragraphs */
+    .side-image {
+        width: 350px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin: 10px; /* Add margin for spacing */
+    }
+
+    /* Paragraph container for centered text */
+    .text-container {
+        text-align: center;
+    }
+
+    /* Banner logo */
+    .logo {
+        width: 300px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        position: absolute; /* Absolute positioning */
+        top: 10px; /* Adjust the top position as needed */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        z-index: 1; /* Place on top of other content */
+    }
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+   </style>
+</head>
+<body>
+   <a href="/sign-up"><img src="/static/images/s1.jpeg" alt="Banner Logo" class="logo"></a><br>
+   <div class="container">
+
+    
+       <div class="text-container">
+        <br><br><br>
+        <form action="/signup-process" method="POST">
+            <div class="form-group">
+                <label for="username">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Phone number:</label>
+                <input type="tel" id="number" name="number" placeholder="Enter your 10 digit phone number" required pattern="[0-9]{10}">
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+       </div>
+
+   </div>
+
+   <footer><strong><p>Have any doubts or need to contact us?</p>
+    <p>Contact Information:</p>
+    <p>Email: dxm4501@mavs.uta.edu</p>
+    <p>Phone: (123)-456-7890</p>
+    <p>Address: 1001 S Center St<br>Arlington<br>Texas - 76010</p></strong>
+</footer>
+</body>
+</html>

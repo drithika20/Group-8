@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="windows-1252">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pet Adoption</title>
+   <style>
+    body {
+        background-image: url('/static/images/background.jpeg');
+        background-size: cover; /* Cover the entire viewport */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center; /* Center the background image */
+        color: black;
+        text-align: center;
+        font-size: 24px;
+        padding: 100px;
+        margin: 0; /* Remove default margin */
+    }
+
+    /* Container for content and images */
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        position: relative; /* Enable relative positioning */
+    }
+
+    /* Styles for the footer */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Images to be aligned alongside the paragraphs */
+    .side-image {
+        width: 350px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        margin: 10px; /* Add margin for spacing */
+    }
+
+    /* Paragraph container for centered text */
+    .text-container {
+        text-align: center;
+    }
+
+    /* Banner logo */
+    .logo {
+        width: 550px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        position: absolute; /* Absolute positioning */
+        top: 10px; /* Adjust the top position as needed */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+        z-index: 1; /* Place on top of other content */
+    }
+   </style>
+</head>
+<body>
+   <a href="/"><img src="/static/images/banner.jpeg" alt="Banner Logo" class="logo"></a><br><br><br>
+   <div class="container">
+    <div>
+        <img src="/static/images/p1.jpeg" alt="Left Image" class="side-image"><br>
+        <img src="/static/images/p3.jpeg" alt="Left Image" class="side-image"><br>
+    </div>
+    
+       <div class="text-container">
+           <h1>Welcome to Online Pet Adoption Center</h1>
+           <h2>Ready to adopt a pet?</h2>
+           <p><strong>Are you new here? Click here to <a href="/sign-up">Sign Up</a>.</strong></p>
+           <p><strong>Already a member here? Click here to <a href="/sign-in">Login</a>.</strong></p>
+       </div>
+       
+       <div>
+           <img src="/static/images/p2.jpeg" alt="Right Image" class="side-image"><br>
+           <img src="/static/images/p4.jpeg" alt="Right Image" class="side-image"><br>
+       </div>
+   </div>
+
+   <footer><strong><p>Have any doubts or need to contact us?</p>
+    <p>Contact Information:</p>
+    <p>Email: dxm4501@mavs.uta.edu</p>
+    <p>Phone: (123)-456-7890</p>
+    <p>Address: 1001 S Center St<br>Arlington<br>Texas - 76010</p></strong>
+   </footer>
+</body>
+</html>
